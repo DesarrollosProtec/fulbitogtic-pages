@@ -2,7 +2,16 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+
   <title>Fulbito GTIC</title>
+
+  <!-- No indexar -->
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <!-- Responsive -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- OneSignal -->
@@ -12,31 +21,16 @@
     OneSignalDeferred.push(async function(OneSignal) {
       await OneSignal.init({
         appId: "e172ace6-32d8-48bc-b4f5-f82239a6a8c6",
-        notifyButton: {
-          enable: true
-        }
       });
     });
   </script>
-
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-    }
-    iframe {
-      width: 100%;
-      height: 100vh;
-      border: none;
-    }
-  </style>
 </head>
 
-<body>
+<body style="margin:0; padding:0; height:100vh;">
 
-  <iframe 
-    src="https://www.appsheet.com/start/14dc14cb-8e9b-4293-b11a-9316b79cfb80?refresh=1&wipe=1">
+  <iframe
+    src="https://www.appsheet.com/start/14dc14cb-8e9b-4293-b11a-9316b79cfb80?refresh=1&wipe=1"
+    style="border:none; width:100%; height:100%;">
   </iframe>
 
 </body>
